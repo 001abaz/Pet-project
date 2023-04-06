@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UnitsActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="45dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginBottom="17dp"
+        android:background="#00404040"
+        android:contentDescription="@string/app_name"
+        android:onClick="Click_Home"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:srcCompat="@drawable/home"
+        app:tint="#284DB4"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="16dp"
+        android:background="#00404040"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:tint="#284DB4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton10"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:srcCompat="@drawable/love"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="389dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="14dp"
+        android:onClick="Click_Unit1"
+        android:text="@string/unit_1"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,DuplicateSpeakableTextCheck,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="389dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/unit_2"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:ignore="MissingConstraints,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="389dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="11dp"
+        android:text="Unit 3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

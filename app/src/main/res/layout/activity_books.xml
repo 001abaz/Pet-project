@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="Click_Books"
+    tools:context=".BooksActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="51dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="667dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="17dp"
+        android:background="#00404040"
+        android:contentDescription="@string/app_name"
+        android:onClick="Click_Home"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home"
+        app:tint="#284DB4"
+        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="665dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="18dp"
+        android:background="#00404040"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:tint="#284DB4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton9"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/love"
+        tools:ignore="MissingConstraints,VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="113dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="194dp"
+        android:adjustViewBounds="false"
+        android:background="#42569C"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="Click_Books"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:text="Books"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="120dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="44dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton12"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/navigate"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="117dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="72dp"
+        android:contentDescription="@string/english_zone"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/navigaste1"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="117dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/english_zone"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton11"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/navi"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="117dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="60dp"
+        android:contentDescription="@string/english_zone"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toEndOf="@+id/imageButton13"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton12"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/navigate2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="117dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="120dp"
+        android:contentDescription="@string/english_zone"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/navigate3"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="117dp"
+        android:layout_height="156dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="120dp"
+        android:contentDescription="@string/english_zone"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toEndOf="@+id/imageButton16"
+        app:srcCompat="@drawable/navig"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

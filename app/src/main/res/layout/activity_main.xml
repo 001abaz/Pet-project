@@ -103,7 +103,7 @@
         android:layout_marginBottom="108dp"
         android:background="#6FA7EA"
         android:contentDescription="@string/app_name"
-        android:onClick="Click_Quiz"
+        android:onClick="Click_units"
         android:scaleType="fitEnd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -37,5 +37,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, QuizActivity.class);
         startActivity(intent);
     }
+    public void Click_Audio(View v) {
+        Intent intent = new Intent(MainActivity.this, AudioActivity.class);
+        startActivity(intent);
+    }
 
 }

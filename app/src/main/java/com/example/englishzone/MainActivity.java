@@ -34,7 +34,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void Click_Quiz(View v) {
-        Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+        Intent intent = new Intent(MainActivity.this, QuizUnitActivity.class);
+        startActivity(intent);
+    }
+    public void Click_audio(View v) {
+        Intent intent = new Intent(MainActivity.this, AudioActivity.class);
         startActivity(intent);
     }
     public void Click_Audio(View v) {

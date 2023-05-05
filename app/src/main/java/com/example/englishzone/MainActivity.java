@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, SettingActivity.class);
         startActivity(intent);
     }
-    public void Click_Quiz(View v) {
+    public void Click_Quiz_units(View v) {
         Intent intent = new Intent(MainActivity.this, QuizUnitActivity.class);
         startActivity(intent);
     }
@@ -45,5 +45,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, AudioActivity.class);
         startActivity(intent);
     }
+
 
 }

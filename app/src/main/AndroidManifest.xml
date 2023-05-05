@@ -11,10 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EnglishZone"
         tools:targetApi="31">
-
         <meta-data
             android:name="com.google.android.actions"
-            android:resource="@xml/rounded_corners" />
+            android:resource="@xml/corners" />
 
         <activity
             android:name=".SettingActivity"
@@ -30,16 +29,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"/>
-        <activity
-            android:name=".QuizActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

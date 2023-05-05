@@ -139,7 +139,7 @@
         android:layout_marginTop="56dp"
         android:background="#00FFFFFF"
         android:contentDescription="@string/app_name"
-        android:onClick="Click_audio"
+        android:onClick="Click_Quiz_units"
         android:scaleType="fitXY"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton3"

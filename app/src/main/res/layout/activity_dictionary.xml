@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DictionaryActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton32"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="148dp"
+        android:background="#00404040"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/love"
+        app:tint="#284DB4" />
+
+    <ImageButton
+        android:id="@+id/imageButton31"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="76dp"
+        android:background="#00404040"
+        android:contentDescription="@string/app_name"
+        android:onClick="Click_Home"
+        android:scaleType="centerInside"
+        android:tint="#284DB4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton32"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:srcCompat="@drawable/home" />
+
+    <TextView
+        android:id="@+id/main_dictionary"
+        android:layout_width="110dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="678dp"
+        android:text="Dictionary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/corners"
+        android:layout_width="386dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="500dp"
+        android:background="@drawable/rounded_background"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_dictionary"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="9dp"
+        tools:ignore="MissingConstraints" >
+
+        <TextView
+            android:id="@+id/dictionary_eng"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Eng"/>
+
+        <TextView
+            android:id="@+id/dictionary_tra"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="tra"/>
+
+        <TextView
+            android:id="@+id/dictionary_ru"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="Ru" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/back_dictionary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginBottom="308dp"
+        android:text="Back"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton31"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/rounded_background"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="308dp"
+        android:text="next"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toEndOf="@+id/back_dictionary"
+        android:background="@drawable/rounded_background"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

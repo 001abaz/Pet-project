@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import java.util.Dictionary;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -45,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, AudioActivity.class);
         startActivity(intent);
     }
+    public void Click_Dictionary(View v) {
+        Intent intent = new Intent(MainActivity.this, DictionaryActivity.class);
+        startActivity(intent);
+    }
+
 
 
 }

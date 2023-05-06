@@ -59,39 +59,18 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints,TextSizeCheck,VisualLintOverlap" />
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:adjustViewBounds="true"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/app_name"
-        android:cropToPadding="false"
-        android:onClick="Click_books"
-        android:scaleType="centerInside"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.179"
-        app:srcCompat="@drawable/books"
-        tools:ignore="ImageContrastCheck" />
-
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="22dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/fredoka_one"
         android:text="Test"
         android:textColor="#284DB5"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
         tools:ignore="MissingConstraints,TextSizeCheck,VisualLintOverlap" />
 
     <ImageButton
@@ -101,7 +80,7 @@
         android:layout_marginStart="7dp"
         android:layout_marginEnd="7dp"
         android:layout_marginBottom="108dp"
-        android:background="#6FA7EA"
+        android:background="@xml/corners"
         android:contentDescription="@string/app_name"
         android:onClick="Click_units"
         android:scaleType="fitEnd"
@@ -112,52 +91,34 @@
         app:srcCompat="@drawable/volume"
         tools:ignore="MissingConstraints" />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="174dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="86dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/app_name"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.22"
-        app:srcCompat="@drawable/dict" />
+    <!--    <ImageButton-->
+<!--        android:id="@+id/imageButton5"-->
+<!--        android:layout_width="175dp"-->
+<!--        android:layout_height="125dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:background="@xml/corners"-->
+<!--        android:contentDescription="@string/app_name"-->
+<!--        android:onClick="Click_Quiz_units"-->
+<!--        android:scaleType="fitXY"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView5"-->
+<!--        app:srcCompat="@drawable/test"-->
+<!--        tools:ignore="MissingConstraints" />-->
 
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="175dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="56dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/app_name"
-        android:onClick="Click_Quiz_units"
-        android:scaleType="fitXY"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-        app:srcCompat="@drawable/test"
-        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/fredoka_one"
         android:text="Dictionary"
         android:textColor="#284DB5"
         android:textSize="18dp"
         app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
         tools:ignore="MissingConstraints,TextSizeCheck,VisualLintOverlap" />
 
     <ImageButton
@@ -208,5 +169,87 @@
         app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TextSizeCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="380dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="380dp"
+            android:layout_height="146dp"
+            android:contentDescription="@string/ImageButton"
+            android:onClick="Click_books"
+            android:scaleType="fitCenter"
+            android:src="@drawable/books"
+            tools:ignore="ContentDescription,DuplicateSpeakableTextCheck" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="177dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="86dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ContentDescription">
+
+        <ImageView
+            android:layout_width="177dp"
+            android:layout_height="127dp"
+            android:contentDescription="@string/ImageButton"
+            android:onClick="Click_Quiz_units"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="177dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="86dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.013"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="177dp"
+            android:layout_height="127dp"
+            android:contentDescription="@string/ImageButton"
+            android:onClick="Click_Quiz_units"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dict"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

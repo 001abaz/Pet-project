@@ -245,7 +245,7 @@
             android:layout_width="177dp"
             android:layout_height="127dp"
             android:contentDescription="@string/ImageButton"
-            android:onClick="Click_Quiz_units"
+            android:onClick="Click_Dictionary"
             android:scaleType="centerCrop"
             android:src="@drawable/dict"
             tools:ignore="ContentDescription" />

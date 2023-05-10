@@ -18,7 +18,6 @@ public class BooksActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Window Books", Toast.LENGTH_LONG) .show();
     }
     public void Click_Home(View v) {
-        Intent intent = new Intent(BooksActivity.this, MainActivity.class);
-        startActivity(intent);
+        finish();
     }
 }

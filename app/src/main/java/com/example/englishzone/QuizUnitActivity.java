@@ -23,8 +23,7 @@ public class QuizUnitActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quiz_unit);
     }
     public void Click_Home(View v) {
-        Intent intent = new Intent(QuizUnitActivity.this, MainActivity.class);
-        startActivity(intent);
+        finish();
     }
     public void Click_Test(View v) {
         Intent intent = new Intent(QuizUnitActivity.this, SettingActivity.class);

@@ -20,8 +20,7 @@ public class SettingActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Last upgrade", Toast.LENGTH_LONG) .show();
     }
     public void Click_Home(View v) {
-        Intent intent = new Intent(SettingActivity.this, MainActivity.class);
-        startActivity(intent);
+        finish();
     }
 
 

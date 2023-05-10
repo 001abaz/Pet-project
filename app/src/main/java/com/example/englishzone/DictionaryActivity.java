@@ -59,7 +59,6 @@ public class DictionaryActivity extends AppCompatActivity {
     }
 
     public void Click_Home(View v) {
-        Intent intent = new Intent(DictionaryActivity.this, MainActivity.class);
-        startActivity(intent);
+        finish();
     }
 }
